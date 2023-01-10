@@ -1,0 +1,28 @@
+.card-item{
+    background-color: aquamarine;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.card-item :hover{
+transform: scale(1.1);
+transition: all 0.3s;
+}
+.card-top{
+    height: 300px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.card-bottom{
+    padding: 20px;
+}
+.card-info{
+    color: rgb(32, 20, 173);
+}
+.card-info :nth-child(1) h1{
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: blue;
+}

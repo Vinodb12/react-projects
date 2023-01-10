@@ -1,0 +1,14 @@
+.movie-list{
+    margin:  20px 0px;
+    
+}
+h2{
+    color: blue;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.movie-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(220px,lfr));
+    grid-gap: 15px;
+}

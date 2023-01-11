@@ -1,22 +1,27 @@
-import logo from "./logo.svg";
-import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./components/home/Home";
-import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
-import Moviesdetails from "./components/moviedetails/Moviesdetails";
-import Pagenotfound from "./components/pagenotfound/Pagenotfound";
+import { ToastContainer } from "react-toastify";
+import "./App.css";
+import About from "./Contactapp/About";
+import Addedit from "./Contactapp/Addedit";
+import Header from "./Contactapp/Header";
+import Home from "./Contactapp/Home";
+import View from "./Contactapp/View";
+
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter >
+      <Header />
+      <ToastContainer position="top-right" />
+      
+
       <div className="App">
-        <Header />
         <Routes>
-          <Route path="/" exact element={<Home />} />
-          <Route path="/movie/:omdbID" element={<Moviesdetails />} />
-          <Route element={<Pagenotfound />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/add/:id" element={<Addedit />} />
+          <Route path="/about/:id" element={<About />} />
+          <Route path="/view/:id" element={<View />} />
+          <Route  element={<h1> 404 page not found</h1>} />
         </Routes>
-        <Footer />
       </div>
     </BrowserRouter>
   );

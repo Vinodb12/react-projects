@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container_box{
+    width: 1000px;
+    height: auto;
+    text-align: center;
+    border: 2px solid blue;
+    align-items: center;
+    margin: auto;
+
+
+}
+.container_box div:nth-child(1) h1{
+    border: 2px solid blue;
+    width: 100%;
+    height: auto;
+
+}
+.contact_details{
+    background-color: aqua;
+    text-align: center;
+
+}
+.contact_details div:nth-child(1) h1{
+    background-color: aqua;
+    text-align: center;
+
+}
+.contact_details div:nth-child(2) span{
+    background-color: rgb(35, 234, 31);
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: initial;
+    text-align: center;
+    border: 1px solid red;
+
+}
+button{
+    width: 100px;
+    height: 30px;
+    background-color: red;
+    color: white;
+}
+button:hover{
+    border: 1px solid rgb(9, 9, 151);
+    border-radius: 50px; 
+}
